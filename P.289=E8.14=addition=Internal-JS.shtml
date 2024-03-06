@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--script src="multiply.js" type="text/javascript"></script> -->
+	<script>
+		// Multiplies two numbers typed into input boxes on the page,
+		// and displays the result in a span on the page.
+		function compute() {
+			var input1 = document.getElementById("num1");   // fetch the 2 numbers
+			var input2 = document.getElementById("num2");
+			var answer = document.getElementById("answer");
+		  	var result = parseInt(input1.value) + parseInt(input2.value);       // compute result
+			answer.innerHTML = result;
+		}
+	</script>
+</head>
+
+<body>
+<h1>The Amazing Multiplier</h1>
+
+<div>
+	<input id="num1" type="text" size="3" value="0"/> + 
+	<input id="num2" type="text" size="3" value="0"/> =
+	<span  id="answer"></span> 
+	<br /><br />
+	<button onclick="compute();">Compute!</button>
+</div>
+
+</body>
+</html>
